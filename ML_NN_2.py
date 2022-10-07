@@ -77,3 +77,18 @@ plt.contour(X,Y,C,nlevels,colors="white")
 plt.xlabel("theta_0")
 plt.ylabel("theta_1")
 plt.show()
+
+
+
+# cell: 6
+
+# Now we do gradient descent and, for each step,
+# we plot the (sampled) true function vs. the parametrized function
+# We also plot the current location of parameters theta
+# (over the average cost function)
+
+# import functions for updating display 
+# (simple animation)
+
+from IPython.display import clear_output
+from time import sleep
