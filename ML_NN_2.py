@@ -51,3 +51,29 @@ def get_avg_cost(theta0s,theta1s,nsamples):
             x=samples(nsamples)
             C[j0,j1]=0.5*np.average((f(theta,x)-true_f(x))**2)
     return(C)
+
+# cell 3
+
+# take arbitrary parameters as starting point
+theta=np.array([1.5,-2.3])
+
+x=samples(100)
+# illustrate the parametrized function, at sampled points,
+# compare against actual function
+plt.scatter(x,f(theta,x),color="orange")
+plt.scatter(x,true_f(x),color="blue")
+plt.show()
+
+
+# cell:4
+
+theta0s=np.linspace(-3,6,40)
+theta1s=np.linspace(-2,3,40)
+C=get_avg_cost(theta0s,theta1s,10000)
+nlevels=20
+X,Y=np.meshgrid(theta0s,theta1s,indexing='ij')
+plt.contourf(X,Y,C,nlevels)
+plt.contour(X,Y,C,nlevels,colors="white")
+plt.xlabel("theta_0")
+plt.ylabel("theta_1")
+plt.show()
