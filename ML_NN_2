@@ -1,0 +1,3 @@
+
+# # Nonlinear curve fitting by stochastic gradient descent
+# This notebook shows how stochastic gradient descent can help fit an arbitrary function (neural networks essentially do the same, but in much higher dimensions and with many more parameters)
