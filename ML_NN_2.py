@@ -92,3 +92,15 @@ plt.show()
 
 from IPython.display import clear_output
 from time import sleep
+
+
+# take arbitrary parameters as starting point
+theta=np.array([-1.0,2.0])
+
+# do many steps of stochastic gradient descent,
+# continue showing the comparison!
+eta=.2 # "learning rate" (gradient descent step size)
+nsamples=10 # stochastic x samples used per step
+nsteps=100 # how many steps we take
+
+x_sweep=np.linspace(-4,4,300)
