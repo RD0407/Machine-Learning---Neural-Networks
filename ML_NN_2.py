@@ -104,3 +104,42 @@ nsamples=10 # stochastic x samples used per step
 nsteps=100 # how many steps we take
 
 x_sweep=np.linspace(-4,4,300)
+
+
+for n in range(nsteps):
+    #############################
+    # THE CRUCIAL THREE LINES:  #
+    #############################
+    x=samples(nsamples) # get random samples
+    # deviation from true function (vector):
+    deviation=f(theta,x)-true_f(x)
+    # do one gradient descent step:
+    theta-=eta*np.average(deviation[None,:]*f_grad(theta,x),axis=1)
+    
+    # Now: Plotting
+    # compare true function (blue) against
+    # parametrized function (orange)
+    # blue dots indicate random points where
+    # the true function was sampled in this step
+    clear_output(wait=True)
+    fig,ax=plt.subplots(ncols=2,nrows=1,figsize=(8,2))
+    
+    nlevels=20
+    ax[0].contourf(X,Y,C,nlevels)
+    ax[0].contour(X,Y,C,nlevels,colors="white")
+    ax[0].scatter([theta[0]],[theta[1]],color="orange")
+    ax[0].set_xlim(theta0s[0],theta0s[-1])
+    ax[0].set_ylim(theta1s[0],theta1s[-1])
+    ax[0].set_xlabel("theta_0")
+    ax[0].set_ylabel("theta_1")    
+    
+    ax[1].plot(x_sweep,true_f(x_sweep),color="blue")
+    ax[1].scatter(x,true_f(x),color="blue")
+    ax[1].plot(x_sweep,f(theta,x_sweep),color="orange")
+    ax[1].set_xlim(-4,4)
+    ax[1].set_ylim(0.0,4.0)
+    ax[1].set_xlabel("x")
+    ax[1].set_ylabel("f") 
+    
+    plt.show()
+    sleep(0.3)
