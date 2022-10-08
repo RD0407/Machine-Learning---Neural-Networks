@@ -53,7 +53,7 @@ def get_avg_cost(theta0s,theta1s,nsamples):
 
 # cell 3
 
-# take arbitrary parameters as starting point
+# take the arbitrary parameters as starting point
 theta=np.array([1.5,-2.3])
 
 x=samples(100)
@@ -140,4 +140,4 @@ for n in range(nsteps):
     ax[1].set_ylabel("f") 
     
     plt.show()
-    sleep(0.3)
+    sleep(0.2)
