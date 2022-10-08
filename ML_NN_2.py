@@ -32,7 +32,7 @@ def f_grad(theta,x):
     ))
 
 
-# Define the actual function (the target, to be fitted)
+# We define the actual function (the target, to be fitted)
 def true_f(x):
     return( 3.0/((x-0.5)**2+1.0) )
 
@@ -58,7 +58,7 @@ def get_avg_cost(theta0s,theta1s,nsamples):
 theta=np.array([1.5,-2.3])
 
 x=samples(100)
-# illustrate the parametrized function, at sampled points,
+# We illustrate the parametrized function, at sampled points, and
 # compare against actual function
 plt.scatter(x,f(theta,x),color="orange")
 plt.scatter(x,true_f(x),color="blue")
