@@ -15,8 +15,7 @@ def f(theta,x):
     """
     return(theta[0]/((x-theta[1])**2+1.0))
 
-# Define the gradient of the parametrized function
-# with respect to its parameters
+# We define the gradient of the parametrized function with respect to its parameters
 def f_grad(theta,x):
     """
     Return the gradient of f with respect to theta
