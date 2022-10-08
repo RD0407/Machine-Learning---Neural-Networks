@@ -81,8 +81,7 @@ plt.show()
 
 # cell: 6
 
-# Now we do gradient descent and, for each step,
-# we plot the (sampled) true function vs. the parametrized function
+# Now we do gradient descent and, for each step, we plot the (sampled) true function vs. the parametrized function
 # We also plot the current location of parameters theta
 # (over the average cost function)
 
