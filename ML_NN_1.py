@@ -29,3 +29,11 @@ y_in=array([0.2,0.4,-0.1])
 
 z=dot(w,y_in)+b # result: the vector of 'z' values, length N1
 y_out=1/(1+exp(-z)) # the 'sigmoid' function (applied elementwise)
+
+# cell 6
+
+print("network input y_in:", y_in)
+print("weights w:", w)
+print("bias vector b:", b)
+print("linear superposition z:", z)
+print("network output y_out:", y_out)
