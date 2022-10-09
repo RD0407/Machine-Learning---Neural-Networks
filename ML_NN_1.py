@@ -45,3 +45,12 @@ def apply_net(y_in):
     
     z=dot(w,y_in)+b    
     return(1/(1+exp(-z)))
+
+# cell 8
+
+
+N0=2 # input layer size
+N1=1 # output layer size
+
+w=random.uniform(low=-10,high=+10,size=(N1,N0)) # random weights: N1xN0
+b=random.uniform(low=-1,high=+1,size=N1) # biases: N1 vector
