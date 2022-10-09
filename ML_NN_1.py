@@ -20,3 +20,7 @@ N1=2 # output layer size
 w=random.uniform(low=-1,high=+1,size=(N1,N0))
 # initialize random biases: N1 vector
 b=random.uniform(low=-1,high=+1,size=N1)
+
+# cell 4
+
+y_in=array([0.2,0.4,-0.1])
