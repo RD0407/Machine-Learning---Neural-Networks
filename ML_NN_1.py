@@ -24,3 +24,8 @@ b=random.uniform(low=-1,high=+1,size=N1)
 # cell 4
 
 y_in=array([0.2,0.4,-0.1])
+
+# cell 5
+
+z=dot(w,y_in)+b # result: the vector of 'z' values, length N1
+y_out=1/(1+exp(-z)) # the 'sigmoid' function (applied elementwise)
