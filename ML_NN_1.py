@@ -37,3 +37,11 @@ print("weights w:", w)
 print("bias vector b:", b)
 print("linear superposition z:", z)
 print("network output y_out:", y_out)
+
+# cell 7
+
+def apply_net(y_in):
+    global w, b
+    
+    z=dot(w,y_in)+b    
+    return(1/(1+exp(-z)))
