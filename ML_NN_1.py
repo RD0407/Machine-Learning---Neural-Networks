@@ -81,3 +81,5 @@ plt.title("NN output as a function of input values")
 plt.xlabel("y_2")
 plt.ylabel("y_1")
 plt.show()
+
+# cell 11
