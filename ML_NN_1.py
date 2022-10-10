@@ -87,3 +87,5 @@ plt.show()
 def apply_layer(y_in,w,b): 
     z=dot(w,y_in)+b
     return(1/(1+exp(-z)))
+
+# cell 12
