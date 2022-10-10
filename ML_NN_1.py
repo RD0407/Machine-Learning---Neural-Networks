@@ -54,3 +54,7 @@ N1=1 # output layer size
 
 w=random.uniform(low=-10,high=+10,size=(N1,N0)) # random weights: N1xN0
 b=random.uniform(low=-1,high=+1,size=N1) # biases: N1 vector
+
+
+
+apply_net([0.8,0.3]) # a simple test
