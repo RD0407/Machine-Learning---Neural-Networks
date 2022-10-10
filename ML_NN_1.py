@@ -89,3 +89,8 @@ def apply_layer(y_in,w,b):
     return(1/(1+exp(-z)))
 
 # cell 12
+
+
+N0=2 # input layer size
+N1=30 # hidden layer size
+N2=1 # output layer size
