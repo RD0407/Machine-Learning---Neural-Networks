@@ -58,3 +58,6 @@ b=random.uniform(low=-1,high=+1,size=N1) # biases: N1 vector
 # cell 9
 
 apply_net([0.8,0.3]) # a simple test
+
+M=50 # will create picture of size MxM
+y_out=zeros([M,M]) # array MxM, to hold the result
