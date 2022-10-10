@@ -61,3 +61,13 @@ apply_net([0.8,0.3]) # a simple test
 
 M=50 # will create picture of size MxM
 y_out=zeros([M,M]) # array MxM, to hold the result
+
+for j1 in range(M):
+    for j2 in range(M):
+        # out of these integer indices, generate
+        # two values in the range -0.5...0.5
+        # and then apply the network to those two
+        # input values
+        value0=float(j1)/M-0.5
+        value1=float(j2)/M-0.5
+        y_out[j1,j2]=apply_net([value0,value1])[0]
