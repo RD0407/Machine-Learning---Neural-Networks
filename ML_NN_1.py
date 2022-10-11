@@ -106,3 +106,9 @@ b2=random.uniform(low=-1,high=+1,size=N2) # biases
 # cell 13
 
 # evaluate the network by subsequently evaluating the two steps (input to hidden and hidden to output)
+def apply_net(y_in):
+    global w1,b1,w2,b2
+    
+    y1=apply_layer(y_in,w1,b1)
+    y2=apply_layer(y1,w2,b2)
+    return(y2)
