@@ -112,3 +112,5 @@ def apply_net(y_in):
     y1=apply_layer(y_in,w1,b1)
     y2=apply_layer(y1,w2,b2)
     return(y2)
+
+# cell 14
