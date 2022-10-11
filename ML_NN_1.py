@@ -94,3 +94,5 @@ def apply_layer(y_in,w,b):
 N0=2 # input layer size
 N1=30 # hidden layer size
 N2=1 # output layer size
+
+# weights and biases from input layer to hidden layer:
