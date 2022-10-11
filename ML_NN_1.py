@@ -104,3 +104,5 @@ w2=random.uniform(low=-10,high=+10,size=(N2,N1)) # random weights
 b2=random.uniform(low=-1,high=+1,size=N2) # biases
 
 # cell 13
+
+# evaluate the network by subsequently evaluating the two steps (input to hidden and hidden to output)
