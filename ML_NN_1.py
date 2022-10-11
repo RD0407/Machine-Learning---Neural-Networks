@@ -102,3 +102,5 @@ b1=random.uniform(low=-1,high=+1,size=N1) # biases: N1 vector
 # weights+biases from hidden layer to output layer:
 w2=random.uniform(low=-10,high=+10,size=(N2,N1)) # random weights
 b2=random.uniform(low=-1,high=+1,size=N2) # biases
+
+# cell 13
