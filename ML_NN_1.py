@@ -98,3 +98,7 @@ N2=1 # output layer size
 # weights and biases from input layer to hidden layer:
 w1=random.uniform(low=-10,high=+10,size=(N1,N0)) # random weights: N1xN0
 b1=random.uniform(low=-1,high=+1,size=N1) # biases: N1 vector
+
+# weights+biases from hidden layer to output layer:
+w2=random.uniform(low=-10,high=+10,size=(N2,N1)) # random weights
+b2=random.uniform(low=-1,high=+1,size=N2) # biases
