@@ -140,3 +140,5 @@ plt.show()
 
 
 # Goal: apply network to many samples in parallel (no 'for' loops!)
+
+# cell 16
