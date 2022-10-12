@@ -135,3 +135,5 @@ plt.title("NN output as a function of input values")
 plt.xlabel("y_2")
 plt.ylabel("y_1")
 plt.show()
+
+# Obviously, the shape of the output is already more 'complex' than that of a simple network without hidden layer!
