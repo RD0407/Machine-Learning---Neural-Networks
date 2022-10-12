@@ -137,3 +137,6 @@ plt.ylabel("y_1")
 plt.show()
 
 # Obviously, the shape of the output is already more 'complex' than that of a simple network without hidden layer!
+
+
+# Goal: apply network to many samples in parallel (no 'for' loops!)
