@@ -116,3 +116,12 @@ def apply_net(y_in):
 # cell 14
 
 # obtain values for a range of inputs
+
+M=50 # will create picture of size MxM
+y_out=zeros([M,M]) # array MxM, to hold the result
+
+for j1 in range(M):
+    for j2 in range(M):
+        value0=float(j1)/M-0.5
+        value1=float(j2)/M-0.5
+        y_out[j1,j2]=apply_net([value0,value1])[0]
