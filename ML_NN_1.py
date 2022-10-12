@@ -114,3 +114,5 @@ def apply_net(y_in):
     return(y2)
 
 # cell 14
+
+# obtain values for a range of inputs
