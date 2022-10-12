@@ -125,3 +125,5 @@ for j1 in range(M):
         value0=float(j1)/M-0.5
         value1=float(j2)/M-0.5
         y_out[j1,j2]=apply_net([value0,value1])[0]
+
+ # cell 15
