@@ -127,3 +127,11 @@ for j1 in range(M):
         y_out[j1,j2]=apply_net([value0,value1])[0]
 
  # cell 15
+
+# display image
+plt.imshow(y_out,origin='lower',extent=(-0.5,0.5,-0.5,0.5))
+plt.colorbar()
+plt.title("NN output as a function of input values")
+plt.xlabel("y_2")
+plt.ylabel("y_1")
+plt.show()
