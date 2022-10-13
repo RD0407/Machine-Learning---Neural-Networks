@@ -142,3 +142,6 @@ plt.show()
 # Goal: apply network to many samples in parallel (no 'for' loops!)
 
 # cell 16
+
+# See how the dot product works: 
+# 'contracts' (sums over) the innermost index
