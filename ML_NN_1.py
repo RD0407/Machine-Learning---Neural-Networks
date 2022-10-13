@@ -158,3 +158,6 @@ shape(dot(W,y))
 
 # now try to add the bias vector entries,
 # in the most naive way (beware!)
+
+B=zeros(7)
+result=dot(W,y)+B # will produce an error!
