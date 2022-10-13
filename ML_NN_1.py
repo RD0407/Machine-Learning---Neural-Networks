@@ -152,3 +152,5 @@ y=zeros([8,30])
 # here '30' would stand for the number of samples
 # in our envisaged network applications
 shape(dot(W,y))
+
+# cell 17
