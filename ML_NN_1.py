@@ -154,3 +154,7 @@ y=zeros([8,30])
 shape(dot(W,y))
 
 # cell 17
+
+
+# now try to add the bias vector entries,
+# in the most naive way (beware!)
