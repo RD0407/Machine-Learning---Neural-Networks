@@ -145,3 +145,6 @@ plt.show()
 
 # See how the dot product works: 
 # 'contracts' (sums over) the innermost index
+
+W=zeros([7,8])
+y=zeros([8,30]) 
