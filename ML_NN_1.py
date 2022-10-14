@@ -3,7 +3,7 @@
 # - do that efficiently using batches
 # - illustrate the results for randomly initialized neural networks
 
-# cell 1
+# cell 01
 
 from numpy import array, zeros, exp, random, dot, shape, reshape, meshgrid, linspace
 
