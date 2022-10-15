@@ -173,3 +173,9 @@ shape(dot(y,W))
 
 # cell 19
 # and now we try again by adding the bias vector, again in a naive way
+
+B=zeros(7)
+result=dot(y,W)+B 
+# will give the desired result, 
+# because B is 'broadcast' to shape (30,7)
+shape(result)
