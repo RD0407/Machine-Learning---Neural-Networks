@@ -165,5 +165,4 @@ result=dot(W,y)+B # will produce an error!
 # cell 18
 
 # But with a re-ordering of indices, this works!
-# So, let's take the dimension of size 30 to be
-# the very first one:
+# So, we take the dimension of size 30 to be the very first one:
