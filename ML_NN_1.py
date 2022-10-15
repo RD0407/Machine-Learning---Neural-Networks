@@ -170,3 +170,5 @@ result=dot(W,y)+B # will produce an error!
 y=zeros([30,8])
 W=zeros([8,7])
 shape(dot(y,W))
+
+# cell 19
