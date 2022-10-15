@@ -166,3 +166,7 @@ result=dot(W,y)+B # will produce an error!
 
 # But with a re-ordering of indices, this works!
 # So, we take the dimension of size 30 to be the very first one:
+
+y=zeros([30,8])
+W=zeros([8,7])
+shape(dot(y,W))
