@@ -172,3 +172,5 @@ W=zeros([8,7])
 shape(dot(y,W))
 
 # cell 19
+# and now try again adding the bias vector,
+# again in a naive way
