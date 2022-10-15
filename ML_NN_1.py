@@ -176,6 +176,5 @@ shape(dot(y,W))
 
 B=zeros(7)
 result=dot(y,W)+B 
-# will give the desired result, 
-# because B is 'broadcast' to shape (30,7)
+# will give the desired result, because B is 'broadcast' to shape (30,7)
 shape(result)
