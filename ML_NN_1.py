@@ -178,3 +178,5 @@ B=zeros(7)
 result=dot(y,W)+B 
 # will give the desired result, because B is 'broadcast' to shape (30,7)
 shape(result)
+
+# We now set up for batch processing, i.e. parallel evaluation of many input samples!
